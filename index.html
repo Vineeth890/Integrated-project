@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Form</title>
+    </head>
+    <script>
+        function submit()
+        {
+            alert('User has submitted the form successfully');
+        }
+    </script>
+
+    <script>
+        function spansubmit()
+        {
+            document.getElementById("searchbutton").innerHTML='User has submitted the form successfully';
+        }
+        documnet.getElementById("searchbutton").onclick = spansubmit()
+    </script>
+
+<body>
+    <div>
+        <form name="form" method="POST" target="_blank">
+            <label for="u_name" class="u_form-label">Name</label>
+            <input type="text" name="Name" class="u_name-txt">
+            <br><br>
+            <label for="u_address">Address</label>
+            <textarea rows="5" cols="20" style="background-color:aquamarine;color:black"></textarea>
+            <br>
+            <label for="u_skillsets">Skillsets</label>
+            <br>
+            <input type="checkbox" name="Python">  Python
+            <br>
+            <input type="checkbox" name="Java">  Java
+            <br>
+            <input type="checkbox" name="Dotnet">  Dotnet
+            <br>
+            <input type="checkbox" name="SQL">  SQL
+            <br>
+            <input type="checkbox" name="Artificial Intelligence(AI)">  Artificial Intelligence(AI)
+            <br>
+            <label for="m_Gender">Gender</label>
+            <br>
+            <input type="radio" name="gender">Male
+            <br>
+            <input type="radio" name="gender">Female
+            <br>
+            <input type="submit" name="submit" onclick="submit()" value="submit">
+            <span id="searcbutton" class="search icon-small open-button" onclick="spansubmit()"></span>
+        </form>
+            
+    </div>
+
+</body>
+</html>
+
